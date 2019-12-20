@@ -6,7 +6,7 @@ const HomeScreen = (props) => {
   return(
     <View>
       <Text style={styles.text}>
-        Morri fodase
+        Welcomeeeeee!
       </Text>
       <Button
         onPress={() => props.navigation.navigate('Activity1')}
@@ -33,8 +33,12 @@ const HomeScreen = (props) => {
         title="Go to Color Screen" 
       />
       <Button
-      onPress={() => props.navigation.navigate('ColorControl')}
-      title="Go to Color Control Screen" 
+        onPress={() => props.navigation.navigate('ColorControl')}
+        title="Go to Color Control Screen" 
+      />
+      <Button
+        onPress={() => props.navigation.navigate('TextInput')}
+        title="Go to Text Input Screen" 
       />
     </View>
   );
@@ -42,6 +46,8 @@ const HomeScreen = (props) => {
 
 const styles = StyleSheet.create({
   text: {
+    borderWidth: 10,
+    borderColor: 'red',
     fontSize: 40
   }
 });
